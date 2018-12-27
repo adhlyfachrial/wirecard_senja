@@ -7,6 +7,10 @@ const animals = [
 {name: "Ursa", species: "cat"}
 ];
 
-let fish = animals.filter((animal) => animal.species === 'fish');
-
-console.log(fish);
+//let names = animals.map((animal) => animal.name + " is a " + animal.species);
+let names = animals.map((animal) => {
+	
+	return animal.species === "cat" ? animal.name + " is a " + animal.species : animal.name + " is not a cat";
+	
+});
+console.log(names);
